@@ -1,0 +1,71 @@
+Banco de dados
+
+Html, CSS e JS, Designer(Interface, Wireframe) = Front End - cliente, processado pelo navegador, 
+*configuração do ambiente - Visual Studio Code, Figma etc
+site estático: a pessoa que for atualizar precisa saber o html e css
+
+one page(uma pagina só) 
+
+ou 
+
+landingpage (é uma pag one page mas vinda de uma rede social ou e-mail marketing, pagina especifica de um produto, e dessa pagina pode ir para outro conteúdo do mesmo site
+
+ou
+
+Hotsite - pagina de produto especifico.
+
+Blog, Institucional
+
+
+site dinamico: qualquer pessoa pode adicionar, pois já tem um painel administrativo para incluir informações
+E-commerce
+
+Frameworks JS(já tem a interação) para Front End = react js, angular js, vue js, python - tem um padrão e uma forma para fazer e escrever a forma visual do site, precisa escolher um Framwork ex: nubank, C6 bank, submarino, americanas, casas bahia
+
+Back-End
+
+Tem uma linguagem de programação - PHP, NodeJS(JS ServerSide), Python, Java
+
+Banco de dados - 
+MySQL (SQL) Gratuito e livre sendo o mais usado nos sites;
+SQL Server (SQL), usado mais por empresas,versão paga;
+Oracle (SQL) mais usado em redes bancarias, mais seguro, versão paga;
+Postgres (SQL), 
+MongoDB (NO - SQL) usado junto com o NodeJS, 
+Firebase (NO - SQL)
+
+*stack de desenvolvimento = conjunto de tecnologia
+Mais usada na região: Html/CSS/JS/PHP/MYSQL
+Na moda: ReactJS/NodeSJ/MongoDB
+
+
+Sistema Web
+Notebook - usuário acessa pelo navegador (Html, CSS e JS)
+Nuvem ou Internet - acesso para o servidor
+Servidor(backend, usuário não vê) - recebe os dados do usuário em forma de variável, através da conexão verifica no
+banco de dados as informações enviadas do usuário, se estiver certo acontece todo o caminho ao contrario para enviar a responsta ao usuário
+Request = requisição
+
+
+
+*configuração de ambiente: transformar o pc em um servidor web(programa Apache cria uma pasta para salvar os arquivos e depois conseguir acessar de qualquer computador) e servidor banco de dados
+Processado pelo servidor.
+Apache = Servidor Web
+PHP = interpretar a linguagem
+MYSQL = Banco de dados
+Xampp = facilitador - X multiplataforma, a Apache, M MYSQL, P PHP, P PHER
+Lamp = facilitador do linux
+Amp = facilitador do windows
+
+SGBD: Sistema Gerenciador de Banco de Dados
+HeidiSQL = Ambiente DEV (ambiente de desenvolvimento)
+
+Alternativas
+Wordbench
+PHPMyAdmin
+
+RESUMO DO AMBIENTE DE DESENVOLVIMENTO WEB
+Será necessário:
+VS Code
+Xampp
+Heidi
