@@ -1,4 +1,4 @@
-Banco de dados
+Banco de dados - aula 17-05
 
 Html, CSS e JS, Designer(Interface, Wireframe) = Front End - cliente, processado pelo navegador, 
 *configuração do ambiente - Visual Studio Code, Figma etc
@@ -69,3 +69,57 @@ Será necessário:
 VS Code
 Xampp
 Heidi
+
+servidor thiago heidi - 10.97.46.100
+
+
+aula 18-05
+
+Uso do HeidiSQL
+
+Databases = Base de dados - db_nomeprojeto
+Todo sistema tem, para organizar dados daquele sistema.
+
+Fica dentro da Databases: 
+Tables = Tabelas - tb_nometabela
+
+COMANDOS SQL
+
+SHOW = comando de exibição
+
+SHOW DATABASES; - MOSTRA DAS DATAS BASES EXISTENTES QUE VOCÊ TEM ACESSO
+
+-- PARA COMENTAR NO HEIDI COLOCAR 2 TRAÇOS E ESPAÇO
+
+USE db_renata; seleciona database que iremos utilizar
+
+Para executar precisa selecionar o comando e apertar ctrl+F9
+
+SHOW TABLES; - mostra das tabelas
+
+Tabelas formatação
+id - (código unico) - numero inteiro = int
+sabor - texto/string ou varchar (character e variavel)
+ingredientes -texto
+valor - float ou decimal, vai usar float quando precisar fazer calculo matemático
+tamanho - texto, quando valor for fixo é char
+
+ID INT - varialvel id, inteiro
+AUTO_INCREMENT - vai criar os dados automaticamente seguindo a sequencia. Sempre vai ser no ID
+PRIMARY KEY - coluna que não vai repetir, ex o cpf é unico
+sabor VARCHAR (40) - coluna sabor, variavel e com no maximo 40 caracteres
+NOT NULL - obrigatório preencher
+valor FLOAT(6,2) NOT NULL - colocar a qnt de caracteres 222,22
+tamanho CHAR(1) NOT NULL); - 
+
+Criando tabela
+
+CREATE TABLE tb_pizzas (id INT AUTO_INCREMENT PRIMARY KEY; sabor VARCHAR (40) NOT NULL, valor FLOAT(6,2) NOT NULL, tamanho CHAR(1) NOT NULL);
+
+DESCRIBE tb_pizzas; exibe a estrutura da tabela criada
+
+DESCRIBE tb_pizzas; mostra todos os registros e colunas da tabela
+
+INSERT INTO tb_pizzas (sabor, ingredientes, valor, tamanho) VALUES ('Calabresa','Mussarela e Calabresa','39','G');
+valor R$ tem que colocar ponto e não virgula
+inserir dados na tabela, digitar todos os campos e dps o texto a ser inserido
