@@ -27,7 +27,8 @@ Back-End
 Tem uma linguagem de programação - PHP, NodeJS(JS ServerSide), Python, Java
 
 Banco de dados - 
-MySQL (SQL) Gratuito e livre sendo o mais usado nos sites;
+MySQL (SQL) Gratuito e livre sendo o mais usado nos sites, desenvolvido pela comunidade (livre), a Oracle comprou o MySQL; 
+MariaDB Fork - foi desenvolvido pelas mesmas pessoas do MySQL
 SQL Server (SQL), usado mais por empresas,versão paga;
 Oracle (SQL) mais usado em redes bancarias, mais seguro, versão paga;
 Postgres (SQL), 
@@ -83,19 +84,15 @@ Todo sistema tem, para organizar dados daquele sistema.
 Fica dentro da Databases: 
 Tables = Tabelas - tb_nometabela
 
-COMANDOS SQL
-
-SHOW = comando de exibição
-
-SHOW DATABASES; - MOSTRA DAS DATAS BASES EXISTENTES QUE VOCÊ TEM ACESSO
-
+COMANDOS SQL = query 
+*SHOW = comando de exibição
+*SHOW DATABASES; - MOSTRA DAS DATAS BASES EXISTENTES QUE VOCÊ TEM ACESSO
+*CREATE DATABASE db_nomeprojeto; para criar a database 
 -- PARA COMENTAR NO HEIDI COLOCAR 2 TRAÇOS E ESPAÇO
-
-USE db_renata; seleciona database que iremos utilizar
-
+*USE db_renata; seleciona database que iremos utilizar
 Para executar precisa selecionar o comando e apertar ctrl+F9
-
-SHOW TABLES; - mostra das tabelas
+*SHOW TABLES; - mostra das tabelas
+*DESCRIBE tb_nometabela - mostra a estrutura da tabela
 
 Tabelas formatação
 id - (código unico) - numero inteiro = int
@@ -113,13 +110,23 @@ valor FLOAT(6,2) NOT NULL - colocar a qnt de caracteres 222,22
 tamanho CHAR(1) NOT NULL); - 
 
 Criando tabela
+*CREATE TABLE tb_pizzas (id INT AUTO_INCREMENT PRIMARY KEY, sabor VARCHAR (40) NOT NULL, valor FLOAT(6,2) NOT NULL, tamanho CHAR(1) NOT NULL);
 
-CREATE TABLE tb_pizzas (id INT AUTO_INCREMENT PRIMARY KEY; sabor VARCHAR (40) NOT NULL, valor FLOAT(6,2) NOT NULL, tamanho CHAR(1) NOT NULL);
 
-DESCRIBE tb_pizzas; exibe a estrutura da tabela criada
-
-DESCRIBE tb_pizzas; mostra todos os registros e colunas da tabela
-
-INSERT INTO tb_pizzas (sabor, ingredientes, valor, tamanho) VALUES ('Calabresa','Mussarela e Calabresa','39','G');
+*INSERT INTO tb_pizzas (sabor, ingredientes, valor, tamanho) VALUES ('Calabresa','Mussarela e Calabresa','39','G');
 valor R$ tem que colocar ponto e não virgula
 inserir dados na tabela, digitar todos os campos e dps o texto a ser inserido
+
+*SELECT * FROM tb_nometabela; - para visualizar o que inseriu na tabela.
+
+*DROP DATABASE db_nomeprojeto para deletar uma database vazia! Se tiver dados dentro vai deletar tudo, sem perguntar se tem certeza.
+
+
+AULA 20-05
+
+USANDO Xampp - Start no MySQL, abrir Shell para digitar COMANDOS
+
+Entre parenteses esta o comando
+
+abrir o mysql: (mysql -u root) e enter - conectar no mysql(banco de dados) e qual vai ser o usuario que vai conectar
+
