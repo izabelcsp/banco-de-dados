@@ -119,7 +119,7 @@ inserir dados na tabela, digitar todos os campos e dps o texto a ser inserido
 
 *SELECT * FROM tb_nometabela; - para visualizar o que inseriu na tabela.
 
-*DROP DATABASE db_nomeprojeto para deletar uma database vazia! Se tiver dados dentro vai deletar tudo, sem perguntar se tem certeza.
+*DROP DATABASE db_nomeprojeto para deletar uma database vazia! Se tiver dados dentro vai deletar tudo, sem perguntar se tem certeza. - para deletar a tabela mudar o comando database para tables.
 
 
 AULA 20-05
@@ -130,3 +130,53 @@ Entre parenteses esta o comando
 
 abrir o mysql: (mysql -u root) e enter - conectar no mysql(banco de dados) e qual vai ser o usuario que vai conectar
 
+AULA 24-05
+
+Porta do mysql - 3306 (porta padrão)
+
+*silencio no sucesso - quando não aparece mensagem é porque deu certo.
+
+ALTER TABLE tb_funcionarios CHANGE cpf cpf CHAR(11) NOT NULL UNIQUE; = alterar uma coluna da tabela (tipo do campo), seja no field, type, null, key. precisa copiar o comando inteiro da onde quer alterar. 
+
+
+ATIVIDADE - 24-05
+Atividades SQL(MySQL)
+
+Se já tiver a database, para deletar: DROP DATABASE db_biblioteca;
+
+1.	Criar a database: 
+•	db_biblioteca
+
+2.	Criar a tabela:
+•	tb_livros
+
+Colunas
+ id INT PK AI
+ titulo VARCHAR(50) NN
+ autor VARCHAR(50) NN
+ ano CHAR(4) NN
+ valor FLOAT(6,2) NN
+
+Inserir 3 livros a seu critério
+
+
+Atividades 2 MySQL
+
+Criar a database:
+db_veiculos
+
+Criar a tabela
+tb_carros
+
+
+comando exemplo = *CREATE TABLE tb_pizzas (id INT AUTO_INCREMENT PRIMARY KEY, sabor VARCHAR (40) NOT NULL, valor FLOAT(6,2) NOT NULL, tamanho CHAR(1) NOT NULL);
+
+Campos da tabela
+id INT PK AI
+modelo 
+marca 
+ano 
+cor 
+valor
+
+ INSERIR 1 CARRO
