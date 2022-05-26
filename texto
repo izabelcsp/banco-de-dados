@@ -180,3 +180,77 @@ cor
 valor
 
  INSERIR 1 CARRO
+
+ AULA 25-05
+
+ SELECT = seleciona os dados e colunas a serem exibidos
+
+ SELECT * FROM tb_nometabela; = seleciona e mostra todos os dados e colunas da tabela
+
+ SELECT produto,valor from tb_nometabela; = mostra o produto e valor. Depois do select coloca o nome da field.
+
+ no comando Select o ideal é colocar quais quer mostrar na tela, e não usar o *, pois pode ter algum dado que não precisa aparecer para o usuário final.
+
+ SELECT * FROM tb_nometabela where id_categoria=1; - vai mostrar somente os itens do campo escolhido.
+
+ SELECT * FROM tb_nometabela where valor <= numero; - vai mostrar somente os itens menor ou igual ao numero selecionado.
+
+ SELECT * FROM tb_nometabela fabricante= 'nome' or fabricante='nome'; - vai mostrar os produtos das fabricantes selecionadas
+
+  SELECT * FROM tb_nometabela fabricante= 'nome' AND VALOR<=NUMERO ; - vai mostrar todos os produtos da fabricante no valor solicitado.
+
+
+
+AND = e
+OR = OU
+ CRUD - C DE CREATE, R DE READ, U DE update, d delete
+
+ SELECT COUNT(ID) FROM tb_produto; = mostra total de itens cadastrados
+
+ SELECT MAX ou MIN(valor) ou FROM tb_nometabela; = mostra o maior valor dos produtos.
+
+ SELECT AVG(valor) FROM tb_nometabela; = mostra a média dos preços dos produtos
+
+ SELECT SUM(valor) FROM tb_nometabela; = soma itens cadastrados (1 de cada)
+
+ SELECT SUM(valor)*SUM(quantidade) FROM tb_nometabela; = soma todos itens cadastrados 
+
+ SELECT produto,valor,quantidade,valor*quantidade AS total FROM tb_nometabela; = lista o produto, valor e total das quantidades em estoque
+
+ SELECT * FROM tb_nometabela order by valor; -  AS ascendente, ordem do menor para o maior;
+
+SELECT * FROM tb_nometabela order by valor desc; - decrescente  ascendente, ordem do menor para o maior;
+* pode colocar qualquer coluna quer ordenar
+
+SELECT * FROM tb_nometabela limit 3; - mostra os 3 primeiros produtos, considerando a ordem do id - 
+
+SELECT * FROM tb_nometabela where produto like '%nome%'; = trás os produtos com a palavra entre % que contenha na descrição
+
+
+
+Atividades
+1->Listar os produtos da fabricante Microsoft - select * from tb_produto where fabricante='Microsoft';
+
+2->Listar os produtos com mais de 10 unidades no estoque - select * from tb_produto where quantidade >10;
+
+3->Listar os produtos com valor maior de 5000 - select * from tb_produto where valor >=5000;
+
+4->Listar os produtos em ordem alfabetica - select * from tb_produto order by produto;
+
+ 5->Listar apenas os 5 produtos com maior valor - select * from tb_produto order by valor desc limit 5;
+
+ 6->Listar os produtos que contenham a palavra TV (usar like) - select * from tb_produto where produto like '%tv%';
+
+ 7->Contar o total de produtos da fabricante Samsung - select count(quantidade) from tb_produto where produto like'%samsung%';
+
+ 8->Somar o valor total de produtos da apple em estoque(criar a coluna total) - select produto,valor,quantidade,valor*quantidade as total from tb_produto where fabricante='Apple';
+
+ 9-> Listar os produtos com a palavra SMART no nome(usar like) -select * from tb_produto where produto like '%smart%';
+
+10-> Listar os produtos da marca bosh e funko - 
+SELECT * FROM tb_nometabela fabricante= 'nome' or fabricante='nome'; - vai mostrar os produtos das fabricantes selecionadas
+
+11-> Listar os produtos da categoria 11 (games)
+ 
+
+
